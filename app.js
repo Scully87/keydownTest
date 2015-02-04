@@ -23,6 +23,12 @@ $(document).ready(function() {
       case 40:
           $('#mario').animate({top: "+=15px"}, '1000');
         break;
+
+      // Space Bar Pressed
+      case 32:
+          $('#mario').animate({top: "-=100px"}, '1000');
+          $('#mario').animate({top: "+=100px"}, '1000');
+        break;
     }    
 
   });
