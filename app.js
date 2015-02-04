@@ -1,5 +1,30 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $(document).keydown(function(key){}); 
-  
+    $(document).keydown(function(key) {
+
+        switch(parseInt(key.which,10)) {
+
+      // Left Arrow Pressed
+      case 37:
+          $('#mario').animate({left: "-=15px"}, '1000');
+        break;    
+
+      // Up Arrow Pressed
+      case 38:
+          $('#mario').animate({top: "-=15px"}, '1000');
+        break;
+            
+      // Right Arrow Pressed
+      case 39:
+          $('#mario').animate({left: "+=15px"}, '1000');
+        break;
+
+      // Down Arrow Pressed
+      case 40:
+          $('#mario').animate({top: "+=15px"}, '1000');
+        break;
+    }    
+
+  });
+
 });
